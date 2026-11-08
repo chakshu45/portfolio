@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { ArrowRight, FileDown, Github, Linkedin, Mail, MapPin, Sparkles } from "lucide-react";
 
 export default function Hero() {
@@ -11,6 +12,30 @@ export default function Hero() {
       <div className="absolute bottom-10 -left-20 w-80 h-80 bg-blue-600/10 rounded-full blur-3xl pointer-events-none -z-10" />
 
       <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+        {/* Profile Avatar with Ambient Glow & Live Status Pip */}
+        <div className="relative inline-block mb-6 group">
+          <div className="relative w-36 h-36 sm:w-44 sm:h-44 mx-auto rounded-full p-1.5 bg-gradient-to-tr from-teal-500 via-cyan-400 to-emerald-400 shadow-2xl shadow-teal-500/25 transition-transform duration-300 group-hover:scale-105">
+            <div className="w-full h-full rounded-full overflow-hidden bg-slate-100 dark:bg-slate-800 ring-4 ring-white/20 dark:ring-slate-900/40 relative">
+              <Image
+                src="/profile.jpg"
+                alt="Akash Patial"
+                width={176}
+                height={176}
+                priority
+                className="w-full h-full object-cover object-top transition-transform duration-500 group-hover:scale-110"
+              />
+            </div>
+            {/* Live Availability Status Indicator */}
+            <span
+              className="absolute bottom-2 right-2 sm:bottom-2.5 sm:right-2.5 w-5 h-5 rounded-full bg-emerald-500 border-2 border-white dark:border-slate-900 shadow-md flex items-center justify-center"
+              title="Available for opportunities"
+              aria-label="Available for opportunities"
+            >
+              <span className="w-2 h-2 rounded-full bg-white animate-ping opacity-75" />
+            </span>
+          </div>
+        </div>
+
         {/* Status Badge */}
         <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-teal-500/30 bg-teal-500/10 text-teal-600 dark:text-teal-400 text-xs sm:text-sm font-medium mb-6 backdrop-blur-sm animate-pulse-slow">
           <span className="w-2 h-2 rounded-full bg-teal-500 animate-ping" />

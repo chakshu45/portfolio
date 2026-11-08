@@ -1,5 +1,6 @@
 "use client";
 
+import Image from "next/image";
 import { Award, Briefcase, GraduationCap, Layers, CheckCircle2 } from "lucide-react";
 
 export default function About() {
@@ -43,6 +44,27 @@ export default function About() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
           {/* Natural First-Person Bio */}
           <div className="lg:col-span-7 space-y-5 text-slate-700 dark:text-slate-300 leading-relaxed text-base sm:text-lg">
+            {/* Author Intro Pill */}
+            <div className="flex items-center gap-4 p-3 rounded-2xl bg-teal-500/5 dark:bg-teal-500/10 border border-teal-500/20 backdrop-blur-sm">
+              <div className="relative w-14 h-14 rounded-xl overflow-hidden ring-2 ring-teal-500/30 shrink-0">
+                <Image
+                  src="/profile.jpg"
+                  alt="Akash Patial"
+                  fill
+                  sizes="56px"
+                  className="object-cover object-top"
+                />
+              </div>
+              <div>
+                <h3 className="font-bold text-slate-900 dark:text-white text-base sm:text-lg leading-tight">
+                  Akash Patial
+                </h3>
+                <p className="text-xs sm:text-sm text-teal-600 dark:text-teal-400 font-medium">
+                  Full Stack MERN Developer • B.Tech CSE (Class of 2027)
+                </p>
+              </div>
+            </div>
+
             <p>
               I am a final-year Bachelor of Technology student in Computer Science and Engineering at Rayat Bahra University, Mohali, having stepped into software engineering through a Diploma in Computer Engineering from Government Polytechnic College, Kangra.
             </p>

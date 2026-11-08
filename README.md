@@ -42,6 +42,7 @@ akash-patial-portfolio/
 │   ├── Contact.jsx            # Interactive contact form & contact details
 │   └── Footer.jsx             # Social links, back-to-top & copyright
 ├── public/
+│   ├── profile.jpg            # Professional portrait headshot
 │   ├── Akash_Patial_Resume.pdf# Real downloadable resume PDF
 │   ├── favicon.svg            # Custom modern AP monogram logo
 │   └── favicon.ico

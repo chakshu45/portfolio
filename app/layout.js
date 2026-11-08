@@ -1,6 +1,7 @@
 import "./globals.css";
 
 export const metadata = {
+  metadataBase: new URL("https://chakshu45.github.io"),
   title: "Akash Patial | Full Stack Developer (MERN) & Software Engineer",
   description:
     "Portfolio of Akash Patial, Full Stack MERN Developer and B.Tech CSE student (Class of 2027). Experienced in building scalable web platforms with React.js, Next.js, Node.js, Express, and MongoDB.",
@@ -27,12 +28,21 @@ export const metadata = {
     description:
       "Explore the software engineering projects, internship experience, and technical skills of Akash Patial.",
     siteName: "Akash Patial Portfolio",
+    images: [
+      {
+        url: "/profile.jpg",
+        width: 902,
+        height: 1024,
+        alt: "Akash Patial - Full Stack Developer",
+      },
+    ],
   },
   twitter: {
     card: "summary_large_image",
     title: "Akash Patial | Full Stack Developer (MERN)",
     description:
       "Explore the software engineering projects, internship experience, and technical skills of Akash Patial.",
+    images: ["/profile.jpg"],
   },
   icons: {
     icon: "/favicon.svg",
